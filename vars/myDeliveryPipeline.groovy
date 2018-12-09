@@ -30,6 +30,7 @@ stage('Test'){ steps {
 stage('Publish') {
   steps {
    echo 'publishing' 
+      Build-Dockerimage()
   }
 }}
 }
