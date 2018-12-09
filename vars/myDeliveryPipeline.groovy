@@ -1,4 +1,3 @@
-@Library('build-Dockerimage')_
 def call(Map config) {
     pipeline {
   agent any
