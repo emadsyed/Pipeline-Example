@@ -1,4 +1,4 @@
-@Library('Build-Dockerimage')_
+@Library('build-Dockerimage')_
 def call(Map config) {
     pipeline {
   agent any
@@ -31,7 +31,7 @@ stage('Publish') {
   steps {
    echo 'publishing' 
      
-      Build-Dockerimage()
+      build-Dockerimage()
   }
 }}
 }
