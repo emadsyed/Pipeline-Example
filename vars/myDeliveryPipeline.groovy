@@ -12,7 +12,7 @@ stage('Checkout'){
                          userRemoteConfigs: [[url: env.REPO_NAME]] 
                         ])
   */
-      checkout([$class:'GitSCM', branches: "**"])
+      checkout scm
   }
 }
 stage('Build'){
